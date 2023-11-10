@@ -35,7 +35,7 @@ public class TransactionHistory{
 		}
 		switch(userChoice) {
 		case 1:
-			WelcomeInterface.operations(existingUser.getUserAtmNumber(), mapOfTransactionDetails);
+			LoginAndOperations.operations(existingUser.getUserAtmNumber(), mapOfTransactionDetails);
 			break;
 		case 2:
 			Quit.quit(existingUser);

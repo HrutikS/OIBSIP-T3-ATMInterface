@@ -2,7 +2,7 @@ package atm;
 
 import java.util.Scanner;
 
-public class Logic extends WelcomeInterface{
+public class Logic extends LoginAndOperations{
 	
 	private static int pin;
 	private static int userChoice;
@@ -83,7 +83,7 @@ public class Logic extends WelcomeInterface{
 				
 				switch(userChoice) {
 				case 1:
-					WelcomeInterface.operations(existingUser.getUserAtmNumber(), mapOfTransactionDetails);
+					LoginAndOperations.operations(existingUser.getUserAtmNumber(), mapOfTransactionDetails);
 					break;
 				case 2:
 					Quit.quit(existingUser);

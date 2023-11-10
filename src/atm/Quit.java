@@ -2,7 +2,7 @@ package atm;
 
 import java.util.Scanner;
 
-public class Quit extends WelcomeInterface{
+public class Quit extends LoginAndOperations{
 
 	public static void quit(User existingUser){
 		Scanner sc = new Scanner(System.in);
@@ -30,7 +30,7 @@ public class Quit extends WelcomeInterface{
 			System.exit(0);
 			break;
 		case 2:
-			WelcomeInterface.operations(existingUser.getUserAtmNumber(), mapOfTransactionDetails);
+			LoginAndOperations.operations(existingUser.getUserAtmNumber(), mapOfTransactionDetails);
 			break;
 		default:
 			System.out.println("-------------------------------------------------------------------------------\n"
